@@ -1,0 +1,6 @@
+pandas
+matplotlib
+seaborn
+tqdm
+beautifulsoup4
+openpyxl
