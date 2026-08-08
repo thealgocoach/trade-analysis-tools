@@ -8,7 +8,7 @@ Download using the green **Code** button above, then **Download ZIP**. Each tool
 
 | Tool | What it does | Walkthrough |
 | --- | --- | --- |
-| [Best Times to Initiate a Trade Checker](best-times-checker/) | For every 15 minute slot in the trading day, how often price travelled a target distance before a stop distance. | [Video](WALKTHROUGH_URL) |
+| [Best Times to Initiate a Trade Checker](best-times-checker/) | For every 15 minute slot in the trading day, how often price travelled a target distance before a stop distance. | [On the site](https://algocoach.com/tools) |
 
 More tools will be added over time.
 
