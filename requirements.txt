@@ -4,3 +4,4 @@ seaborn
 tqdm
 beautifulsoup4
 openpyxl
+numpy
