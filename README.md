@@ -14,6 +14,12 @@ Built and demonstrated on the [AlgoCoach](https://www.youtube.com/@algocoach) Yo
 | `NAS100sample.csv` | A trimmed sample of NAS100 M1 data so the script runs out of the box. |
 | `requirements.txt` | The exact packages the script needs. |
 
+**About the sample data:** it is about six weeks of NAS100 M1 history. That is
+enough to prove the script runs and nowhere near enough to conclude anything
+from. Every 15 minute slot gets roughly thirty observations, which is exactly
+the noise problem described in the limitations below. Use your own longer
+history for anything real.
+
 More tools will be added over time.
 
 ## Requirements
