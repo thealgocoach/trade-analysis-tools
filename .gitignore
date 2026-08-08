@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Credentials and keys
+credentials.json
+*.key
+*.pem
+token.json
+
+# Data files (keep the committed sample)
+*.csv
+!NAS100sample.csv
+*.htm
+*.html
+*.log
+*.xlsx
+
+# Tool output
+analysis_results/
+analysis_plots/
+output/
+reports/
+set_files/
+*.png
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
