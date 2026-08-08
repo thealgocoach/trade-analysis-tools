@@ -2,7 +2,7 @@
 
 **Walkthrough video:** WALKTHROUGH_URL
 
-**Download:** [algocoach.com/tools](https://algocoach.com/tools)
+**Walkthrough and more tools:** [algocoach.com/tools](https://algocoach.com/tools)
 
 Pick a target distance and a stop distance. This tool scans your historical minute data and reports, for every 15 minute slot in the trading day, how often price travelled your target distance before it travelled your stop distance.
 
