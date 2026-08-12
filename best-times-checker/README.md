@@ -14,11 +14,19 @@ Version 1.1.
 | `NAS100sample.csv` | Sample data so it runs out of the box. |
 | `requirements.txt` | The packages it needs. |
 
-**About the sample data:** it is about six weeks of NAS100 minute history. That is enough to prove the script runs and nowhere near enough to conclude anything from. Every 15 minute slot gets roughly thirty observations, which is exactly the noise problem described in the limitations below. Use your own longer history for anything real.
+**About the sample data:** it is about three months of NAS100 minute history. That is enough to prove the script runs and nowhere near enough to conclude anything from. Every 15 minute slot gets roughly ninety observations, which is exactly the noise problem described in the limitations below. The walkthrough video uses a much longer private dataset, which is why the output there looks nothing like a sample run. Use your own longer history for anything real.
 
 ## Requirements
 
-Python 3.11 or newer, and the packages in `requirements.txt`.
+Python 3.11 or newer, VS Code, and the packages in `requirements.txt`.
+
+If you don't already have Python, get it from [python.org](https://www.python.org/downloads/). Either the Python install manager or the standalone installer works. If you take the standalone installer, tick **Add python.exe to PATH** during the install. Then open a new terminal and check it:
+
+```
+python --version
+```
+
+A version number means you're set. If nothing comes back, or the Microsoft Store opens instead, Python isn't on your PATH and nothing below this point will work.
 
 ## Setup
 
@@ -50,15 +58,25 @@ pip install -r requirements.txt
 
 In VS Code, press `Ctrl+Shift+P`, choose **Python: Select Interpreter**, and pick the one showing `.venv`.
 
+**A note on folder layout:** the walkthrough video keeps several tools under one parent folder with a shared environment, so the folder names on screen won't match yours. The steps above are the simpler single tool version. Either layout works.
+
 ## Running it
 
 ```
 python Best_Times_to_Initiate_a_Trade_Checker_1_1.py
 ```
 
-The script looks for CSV files sitting in the same folder as the script itself, so it finds `NAS100sample.csv` with no configuration. Charts and a plain text summary are written to that same folder.
+The script looks for CSV files sitting in the same folder as the script itself, so it finds `NAS100sample.csv` with no configuration. Charts and a plain text summary are written to an `analysis_results` folder beside the script.
 
-To use your own data, export minute history from your platform to CSV and drop it in beside the script, matching the column layout of `NAS100sample.csv`. The target distance, stop distance, and other settings are plain variables near the top of the file. Change them and run it again.
+To use your own data, export minute history from your platform to CSV and drop it in beside the script, matching the column layout of `NAS100sample.csv`. **Delete or move `NAS100sample.csv` when you do.** The script uses the first CSV it finds in the folder, so leaving both in place can mean it runs on the sample instead of your data. The output prints a `Found and using data file:` line, so check that if the numbers look wrong.
+
+The target distance, stop distance, and other settings are plain variables near the top of the file. Change them and run it again.
+
+## Getting more data
+
+- **Your own broker's MT5 platform.** Free, and it's the right data for this tool, because the output is in broker server time.
+- **[Dukascopy historical data](https://www.dukascopy.com/swiss/english/marketwatch/historical/).** Free, and covers indices as well as forex. Tickstory will pull it into usable files for you.
+- **TickDataSuite.** Paid, with a 14 day trial. This is what I use.
 
 ## Reading the output, and one thing to be careful about
 
