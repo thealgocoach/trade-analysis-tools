@@ -74,7 +74,7 @@ The target distance, stop distance, and other settings are plain variables near 
 
 ## Getting more data
 
-- **Your own broker's MT5 platform.** Free, and it's the right data for this tool, because the output is in broker server time.
+- **Your own broker's MT4/5 platform.** Free, and it's the right data for this tool, because the output is in broker server time.
 - **[Dukascopy historical data](https://www.dukascopy.com/swiss/english/marketwatch/historical/).** Free, and covers indices as well as forex. Tickstory will pull it into usable files for you.
 - **TickDataSuite.** Paid, with a 14 day trial. This is what I use.
 
