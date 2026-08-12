@@ -11,10 +11,10 @@ Version 1.1.
 | File | What it is |
 | --- | --- |
 | `Best_Times_to_Initiate_a_Trade_Checker_1_1.py` | The tool. |
-| `NAS100sample.csv` | Sample data so it runs out of the box. |
+| `NDX100sample.csv` | Sample data so it runs out of the box. |
 | `requirements.txt` | The packages it needs. |
 
-**About the sample data:** it is about three months of NAS100 minute history. That is enough to prove the script runs and nowhere near enough to conclude anything from. Every 15 minute slot gets roughly ninety observations, which is exactly the noise problem described in the limitations below. The walkthrough video uses a much longer private dataset, which is why the output there looks nothing like a sample run. Use your own longer history for anything real.
+**About the sample data:** it is about three months of NDX100 minute history. That is enough to prove the script runs and nowhere near enough to conclude anything from. Every 15 minute slot gets roughly ninety observations, which is exactly the noise problem described in the limitations below. The walkthrough video uses a much longer private dataset, which is why the output there looks nothing like a sample run. Use your own longer history for anything real.
 
 ## Requirements
 
@@ -66,9 +66,9 @@ In VS Code, press `Ctrl+Shift+P`, choose **Python: Select Interpreter**, and pic
 python Best_Times_to_Initiate_a_Trade_Checker_1_1.py
 ```
 
-The script looks for CSV files sitting in the same folder as the script itself, so it finds `NAS100sample.csv` with no configuration. Charts and a plain text summary are written to an `analysis_results` folder beside the script.
+The script looks for CSV files sitting in the same folder as the script itself, so it finds `NDX100sample.csv` with no configuration. Charts and a plain text summary are written to an `analysis_results` folder beside the script.
 
-To use your own data, export minute history from your platform to CSV and drop it in beside the script, matching the column layout of `NAS100sample.csv`. **Delete or move `NAS100sample.csv` when you do.** The script uses the first CSV it finds in the folder, so leaving both in place can mean it runs on the sample instead of your data. The output prints a `Found and using data file:` line, so check that if the numbers look wrong.
+To use your own data, export minute history from your platform to CSV and drop it in beside the script, matching the column layout of `NDX100sample.csv`. **Delete or move `NDX100sample.csv` when you do.** The script uses the first CSV it finds in the folder, so leaving both in place can mean it runs on the sample instead of your data. The output prints a `Found and using data file:` line, so check that if the numbers look wrong.
 
 The target distance, stop distance, and other settings are plain variables near the top of the file. Change them and run it again.
 
