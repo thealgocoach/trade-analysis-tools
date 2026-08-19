@@ -8,7 +8,7 @@ Download using the green **Code** button above, then **Download ZIP**. Every too
 
 | Tool | Version | What it does | Walkthrough |
 | --- | --- | --- | --- |
-| [Best Times to Initiate a Trade Checker](best-times-checker/) | **1.3** (current) | For every 15 minute slot in the trading day, how often price travelled a target distance before a stop distance. Percentage and point modes, breakeven ratio, thin slots excluded. | [On the site](https://algocoach.com/tools) |
+| [Best Times to Initiate a Trade Checker](best-times-checker/) | **1.3** (current) | For every 15 minute slot in the trading day, how often price travelled a target distance before a stop distance. Percentage and point modes, breakeven ratio, thin slots excluded. | Not published yet |
 | [Best Times to Initiate a Trade Checker](best-times-checker/) | 1.1 | The original. Fixed point targets, win-only score. | [On the site](https://algocoach.com/tools) |
 
 More tools will be added over time.

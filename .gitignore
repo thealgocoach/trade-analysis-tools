@@ -16,7 +16,7 @@ token.json
 
 # Data files (keep the committed sample)
 *.csv
-!NAS100sample.csv
+!NDX100sample.csv
 *.htm
 *.html
 *.log
