@@ -106,6 +106,8 @@ I would rather tell you these than have you find them the hard way.
 3. **Slots with very few observations rank highly on noise alone.** A slot with a handful of observations can top the table by luck. Check the count column before you believe a row. Fixed by the automatic thin-slot exclusion in version 1.3.
 4. **Your broker's daily break shows up as missing data.** Slots around the platform's daily maintenance window will be thin or empty. That is the data, not the market. Still true in version 1.3.
 
+**Patched after filming:** the script used to crash before writing `summary_report.txt`, because two emoji in the console summary can't be printed on a Windows console using its default encoding. That raised an error which the script's own error handling caught and reported instead of finishing. The emoji have been removed from the printed text so the run completes and the summary file gets written. Nothing else about the script changed, and the walkthrough video still matches what you see on screen.
+
 ## Known limitations in version 1.3
 
 1. **Your broker's daily break shows up as missing data.** Slots around the platform's daily maintenance window will be thin or empty, and version 1.3 will list them separately as left out of the ranking rather than silently dropping them, but the underlying gap is still the data, not the market.

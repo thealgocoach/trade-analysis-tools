@@ -158,7 +158,7 @@ try:
         trade_count = len(best_result['details'])
         
         best_strategy_summary += "\n" + "="*60 + "\n"
-        best_strategy_summary += "          🏆 BEST PERFORMING STRATEGY ANALYSIS 🏆\n"
+        best_strategy_summary += "          BEST PERFORMING STRATEGY ANALYSIS\n"
         best_strategy_summary += "               (Based on Highest Performance Score)\n"
         best_strategy_summary += "="*60 + "\n"
         best_strategy_summary += f"Optimal Parameters: TP = ${best_pt}, SL = ${best_sl}\n"
@@ -175,7 +175,7 @@ try:
         start_times = [trade['time'] for trade in best_result['details']]
         time_counts = Counter(start_times)
         
-        best_strategy_summary += "\n--- 🕒 Top 15 Most Successful Trade Initiation Times ---\n"
+        best_strategy_summary += "\n--- Top 15 Most Successful Trade Initiation Times ---\n"
         sorted_times = sorted(time_counts.items(), key=lambda item: (-item[1], item[0]))
         for i, (time, count) in enumerate(sorted_times[:15]):
             best_strategy_summary += f"  {i+1:2}. {time.strftime('%H:%M')}  -  {count} successful trades\n"
